@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('test/',views.Helloworldview.as_view()),
     path('welcome/',views.Welcomeview.as_view()),
+    path('tls/',views.HelloTemplate.as_view()),
 ]
