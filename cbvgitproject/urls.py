@@ -23,4 +23,5 @@ urlpatterns = [
     path('welcome/',views.Welcomeview.as_view()),
     path('tls/',views.HelloTemplate.as_view()),
     path('contextdata/',views.TemplateContext.as_view()),
+    path('book/',views.Booklistview.as_view()),
 ]

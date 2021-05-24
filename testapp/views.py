@@ -1,7 +1,10 @@
 from django.shortcuts import render
-from django.views.generic import View, TemplateView
+from django.views.generic import View, TemplateView, ListView
 from django.http import HttpResponse
 # Create your views here.
+from testapp.models import Book
+
+
 class Helloworldview(View):
     def get(self,request):
         return HttpResponse("<h1> this is class bassed view</h1>")
@@ -18,5 +21,7 @@ class TemplateContext(TemplateView):
         context['subject']="python"
         context['marks']=100
         return context
+class Booklistview(ListView):
+    model=Book
 
 
