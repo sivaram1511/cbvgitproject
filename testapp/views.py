@@ -23,5 +23,6 @@ class TemplateContext(TemplateView):
         return context
 class Booklistview(ListView):
     model=Book
+    template_name = 'testapp/book.html'
 
 
