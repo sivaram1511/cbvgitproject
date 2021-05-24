@@ -10,4 +10,6 @@ class Welcomeview(View):
         return HttpResponse("<h1>this is welcome msg from class based views</h1>")
 class HelloTemplate(TemplateView):
     template_name='testapp/result.html'
+class TemplateContext(TemplateView):
+    template_name="testapp/info.html"
 
