@@ -5,3 +5,6 @@ from django.http import HttpResponse
 class Helloworldview(View):
     def get(self,request):
         return HttpResponse("<h1> this is class bassed view</h1>")
+class Welcomeview(View):
+    def get(self,request):
+        return HttpResponse("<h1>this is welcome msg from class based views</h1>")
