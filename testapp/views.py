@@ -12,4 +12,11 @@ class HelloTemplate(TemplateView):
     template_name='testapp/result.html'
 class TemplateContext(TemplateView):
     template_name="testapp/info.html"
+    def get_context_data(self, **kwargs):
+        context=super().get_context_data(**kwargs)
+        context['name']="siva"
+        context['subject']="python"
+        context['marks']=100
+        return context
+
 
