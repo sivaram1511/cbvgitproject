@@ -7,7 +7,7 @@ from testapp.models import Book
 
 class Helloworldview(View):
     def get(self,request):
-        return HttpResponse("<h1> this is class bassed view</h1>")
+        return HttpResponse("<h1> this is class bassed view</h1>")#this is edited by sivaram
 class Welcomeview(View):
     def get(self,request):
         return HttpResponse("<h1>this is welcome msg from class based views</h1>")
