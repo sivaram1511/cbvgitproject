@@ -31,6 +31,6 @@ class BookDetailview(DetailView):
     #default context:book or object
 class BookCreateview(CreateView):
     model=Book
-    
+
 
 

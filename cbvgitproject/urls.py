@@ -25,4 +25,5 @@ urlpatterns = [
     path('contextdata/',views.TemplateContext.as_view()),
     path('',views.Booklistview.as_view()),
     path('<pk>/',views.BookDetailview.as_view()),
+    path('create/',views.BookCreateview.as_view()),
 ]
